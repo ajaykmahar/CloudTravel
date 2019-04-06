@@ -12,5 +12,6 @@ Follow the below steps to clone and run unit test cases.
 
 -  **Run test cases**.
 	> $pytest
+-  **Run test covrage **.
 	> $pytest --cov=Solution
 	
