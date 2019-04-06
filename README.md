@@ -11,6 +11,6 @@ Follow the below steps to clone and run unit test cases.
 	> **$pip install -r requirements.txt**
 
 -  **Run test cases**.
-	> **$pytest**
+	> $pytest
 	> $pytest --cov=Solution
 	
