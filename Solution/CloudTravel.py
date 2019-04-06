@@ -28,9 +28,8 @@ class CloudTravel:
         return __class__.RADIUS * c
         # ========END OF Calculating travling distance==============
 
-    #Calculate the great circle distance between two points on the earth.   
-    def shortestTrip(self, latitude, longitude, canTravel, origin, destination):
-       
+    # Calculate the great circle distance between two points on the earth.   
+    def shortestTrip(self, latitude, longitude, canTravel, origin, destination):   
         # Can't be destination is the same as our point of origin
         if origin == destination:
            return 0.0

@@ -56,14 +56,36 @@ Constraints
 
 import Solution.CloudTravel as cloud
 
-list_of_latitude = [(0, 0, 70), (0, 0, 70), (0, 30, 60), (0, 20, 55),]
-lsit_of_longitude = [(90, 0, 45), (90, 0, 45), (25, -130, 78), (-20, 85, 42),]
-list_of_canTravel = [("2", "0 2", "0 1"), ("1 2", "0 2", "0 1"), ("1 2", "0 2", "1 2"), ("1", "0", "0"),]
-list_of_origin = [0,0,0,0,]
-list_of_destination = [1,1,0,2]
-expected_output = [10612.237799994255, 6283.185307179585, 0.0, 5306.118899997127,]
+list_of_latitude = [
+                    (0, 0, 70),
+                    (0, 0, 70),
+                    (0, 30, 60),
+                    (0, 20, 55),
+                    ]
+lsit_of_longitude = [
+                    (90, 0, 45),
+                    (90, 0, 45),
+                    (25, -130, 78),
+                    (-20, 85, 42),
+                    ]
+list_of_canTravel = [
+                    ("2", "0 2", "0 1"),
+                    ("1 2", "0 2", "0 1"),
+                    ("1 2", "0 2", "1 2"),
+                    ("1", "0", "0"),
+                    ]
+list_of_origin = [0, 0, 0, 0, ]
+list_of_destination = [1, 1, 0, 2]
+expected_output = [
+                    10612.237799994255,
+                    6283.185307179585,
+                    0.0,
+                    5306.118899997127,
+                    ]
 
 obj = cloud.CloudTravel()
+
+
 def test_shortestTrip():
     for index in range(len(list_of_latitude) - 1):
         assert obj.shortestTrip(list_of_latitude[index], lsit_of_longitude[index], list_of_canTravel[index],list_of_origin[index], list_of_destination[index]) == expected_output[index]
